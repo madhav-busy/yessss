@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registrationform</title>
+    <style>
+        *,html{
+            margin: 0;
+            padding: 0;
+        }
+        #box{
+            width: 600px;
+            height: 900px;
+            background-color: #acc98b;
+            margin: 0 auto;
+            margin-top: 25px;
+            padding: 10px 20px;
+            box-sizing: border-box;
+            box-shadow: 10px 10px 15px #89ce83;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <form>
+            <div>
+                <label>Your Name:</label>
+                <input type="text" placeholder="Enter your name">
+            </div>
+            <div>
+                <label>Your Email:</label>
+                <input type="email" placeholder="Enter your email">
+            </div>
+            <div>
+                <label>Your Phone Number:</label>
+                <input type="text" placeholder="Enter your phone number">
+            </div>
+            <div>
+                <label>Your Date of Birth:</label>
+                <input type="date" placeholder="Enter your date of birth">
+            </div>
+            <div>
+                <label>Your Gender:</label>
+                <input type="radio" name="gender" value="male">Male
+                <input type="radio" name="gender" value="female">Female
+            </div>
+            <div>
+                <label>Your Address:</label>
+                <textarea placeholder="Enter your address"></textarea>
+            </div>
+            <div>   
+                <label>Your password:</label>
+                <input tooltip="Password must be at least 8 characters long" type="password" placeholder="Enter your password">
+            </div>
+            <div>
+                <label>Your Course:</label>
+                <select>
+                    <option>Computer Science</option>
+                    <option>Mathematics</option>
+                    <option>Physics</option>
+                </select>
+            </div>
+            <div>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

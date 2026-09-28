@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wikipedia - Web Development</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #202122;
+            background: #fff;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 18px 30px;
+            border-bottom: 1px solid #a2a9b1;
+        }
+
+        .logo {
+            font-family: Georgia, serif;
+            font-size: 32px;
+        }
+
+        .search {
+            flex: 1;
+            max-width: 500px;
+            padding: 9px;
+            border: 1px solid #a2a9b1;
+        }
+
+        .layout {
+            display: flex;
+            max-width: 1250px;
+            margin: auto;
+        }
+
+        aside {
+            width: 230px;
+            padding: 25px 20px;
+            border-right: 1px solid #eaecf0;
+        }
+
+        aside h3 {
+            font-size: 15px;
+            border-bottom: 1px solid #eaecf0;
+            padding-bottom: 8px;
+        }
+
+        aside a {
+            display: block;
+            margin: 12px 0;
+            color: #36c;
+            text-decoration: none;
+        }
+
+        main {
+            flex: 1;
+            padding: 25px 35px;
+        }
+
+        h1 {
+            font-family: Georgia, serif;
+            font-size: 34px;
+            font-weight: normal;
+            border-bottom: 1px solid #a2a9b1;
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            font-family: Georgia, serif;
+            font-weight: normal;
+            border-bottom: 1px solid #a2a9b1;
+            padding-bottom: 6px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        a {
+            color: #36c;
+        }
+
+        .infobox {
+            float: right;
+            width: 280px;
+            margin: 0 0 20px 25px;
+            padding: 10px;
+            background: #f8f9fa;
+            border: 1px solid #a2a9b1;
+        }
+
+        .infobox h3 {
+            text-align: center;
+            background: #dbeafe;
+            padding: 10px;
+            margin-top: 0;
+        }
+
+        .infobox img {
+            width: 100%;
+            height: 130px;
+            object-fit: cover;
+            background: #ddd;
+        }
+
+        .infobox td {
+            padding: 7px;
+            border-top: 1px solid #c8ccd1;
+            vertical-align: top;
+        }
+
+        footer {
+            margin-top: 30px;
+            padding: 20px;
+            border-top: 1px solid #a2a9b1;
+            font-size: 14px;
+            color: #54595d;
+        }
+
+        @media (max-width: 700px) {
+            .layout {
+                display: block;
+            }
+
+            aside {
+                width: 100%;
+                border-right: 0;
+                border-bottom: 1px solid #eaecf0;
+            }
+
+            .infobox {
+                float: none;
+                width: 100%;
+                margin: 15px 0;
+            }
+
+            main {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">WIKIPEDIA</div>
+        <input class="search" type="search" placeholder="Search Wikipedia">
+        <a href="#">Log in</a>
+    </header>
+
+    <div class="layout">
+        <aside>
+            <h3>Contents</h3>
+            <a href="#introduction">Introduction</a>
+            <a href="#history">History</a>
+            <a href="#technologies">Technologies</a>
+            <a href="#importance">Importance</a>
+            <a href="#references">References</a>
+        </aside>
+
+        <main>
+            <div class="infobox">
+                <h3>Web development</h3>
+                <div style="height:130px; display:flex; align-items:center; justify-content:center;">
+                    🌐
+                </div>
+                <table>
+                    <tr>
+                        <td><strong>Type</strong></td>
+                        <td>Software development</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Purpose</strong></td>
+                        <td>Creating websites and applications</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Common tools</strong></td>
+                        <td>HTML, CSS, JavaScript</td>
+                    </tr>
+                </table>
+            </div>
+
+            <h1>Web development</h1>
+            <p><em>From Wikipedia, the free encyclopedia</em></p>
+
+            <p>
+                <strong>Web development</strong> is the process of creating and maintaining
+                websites and web applications. It involves design, programming, databases,
+                security, and server management.
+            </p>
+
+            <h2 id="introduction">Introduction</h2>
+            <p>
+                Web developers use a combination of technologies to build pages that can be
+                viewed in a web browser. Websites may be simple collections of documents or
+                complex applications that provide interactive services.
+            </p>
+
+            <h2 id="history">History</h2>
+            <p>
+                The modern web began as a system for sharing documents over the Internet.
+                Over time, it developed into a platform supporting communication, education,
+                commerce, entertainment, and many other activities.
+            </p>
+
+            <h2 id="technologies">Technologies</h2>
+            <ul>
+                <li><strong>HTML</strong> defines the structure of a webpage.</li>
+                <li><strong>CSS</strong> controls its appearance and layout.</li>
+                <li><strong>JavaScript</strong> adds interactivity and dynamic behavior.</li>
+                <li><strong>Servers and databases</strong> store and deliver information.</li>
+            </ul>
+
+            <h2 id="importance">Importance</h2>
+            <p>
+                Web development enables organizations and individuals to publish information,
+                provide online services, and connect with users around the world.
+            </p>
+
+            <h2 id="references">References</h2>
+            <ol>
+                <li><a href="#">Introduction to web technologies</a></li>
+                <li><a href="#">World Wide Web standards</a></li>
+            </ol>
+        </main>
+    </div>
+
+    <footer>
+        This page is a fictional Wikipedia-style example created for learning HTML and CSS.
+    </footer>
+</body>
+</html>
