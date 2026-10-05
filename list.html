@@ -5,9 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>list in html</title>
 </head>
+<style>
+    .box{
+        display: flex;
+        gap: 20px;
+        margin: 20px;
+        font-family: Arial, sans-serif;
+    }
+    .flex{
+        background-color: #8ccdeb;
+        padding: 15px 18px;
+        border-radius: 10px;
+        flex: 1;
+        border-right: 6px solid #0d6efd;
+    }
+</style>
 <body>
     <h1>list in html</h1>
     <h2>unordered lsit</h2>
+    <div class ="box">
+        <div class="flex">
     <ul type="square">
         <li>item 1</li>
             <ol>
@@ -18,13 +35,17 @@
         <li>item 3</li>
         <li>item 4</li>
     </ul>
+        </div>
+        <div class="flex">
     <h2>ordered list</h2>
-    <ol type=" " start="8">
+    <ol start="8">
         <li>item 1</li>
         <li>item 2</li>
         <li>item 3</li>
         <li>item 4</li> 
     </ol>
+    </div>
+    <div class="flex">
     <h2>description list</h2>
     <dl>
         <dt>item 1</dt>
@@ -34,11 +55,7 @@
         <dt>item 3</dt>
         <dd>description 3</dd>  
     </dl>
-    <p>jcdsbjdsbvkjhdbvkhfdv
-        sbhdsabchdavvad
-        sdvhbdavbad
-        sacvdajhvad
-        sjkvbi
-    </p>
+    </div>
+</div>
 </body>
 </html>
